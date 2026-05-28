@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship</title>
+  </head>
+  <body>
+    <h1>Battleship</h1>
+
+    <div id="setup">
+      <h2>Coloca tus barcos</h2>
+      <p id="ship-info">Barco actual: <span id="ship-name"></span> (longitud: <span id="ship-length"></span>)</p>
+      <button id="toggle-direction">Dirección: Horizontal</button>
+      <button id="random-place-btn">Colocar aleatoriamente</button>
+      <div id="setup-board" class="board"></div>
+    </div>
+
+    <div id="game" style="display:none">
+      <div class="board-container">
+        <h2>Tu tablero</h2>
+        <div id="player-board" class="board"></div>
+        <p>Barcos restantes: <span id="player-ships-left"></span></p>
+      </div>
+      <div class="board-container">
+        <h2>Tablero enemigo</h2>
+        <div id="enemy-board" class="board"></div>
+        <p>Barcos restantes: <span id="enemy-ships-left"></span></p>
+      </div>
+    </div>
+
+    <div id="message"></div>
+    <button id="restart-btn" style="display:none">Nueva Partida</button>
+  </body>
+</html>

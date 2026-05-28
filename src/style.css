@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a2e;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #00d4ff;
+}
+
+#game {
+  display: flex;
+  gap: 60px;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  gap: 2px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background-color: #16213e;
+  border: 1px solid #0f3460;
+  cursor: pointer;
+}
+
+.cell.ship {
+  background-color: #4a4a8a;
+}
+
+.cell.hit {
+  background-color: #e94560;
+}
+
+.cell.miss {
+  background-color: #0f3460;
+}
+
+.cell.enemy:hover {
+  background-color: #00d4ff33;
+}
+
+#message {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #00d4ff;
+}
+
+#restart-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 1rem;
+  background-color: #00d4ff;
+  color: #1a1a2e;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#restart-btn:hover {
+  background-color: #00a8cc;
+}
+
+#setup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#toggle-direction {
+  padding: 8px 20px;
+  font-size: 1rem;
+  background-color: #4a4a8a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#toggle-direction:hover {
+  background-color: #6a6aaa;
+}
+
+.cell.preview {
+  background-color: #00d4ff55;
+}
+
+.cell.invalid {
+  background-color: #e9456055;
+}
+
+#random-place-btn {
+  padding: 8px 20px;
+  font-size: 1rem;
+  background-color: #00d4ff;
+  color: #1a1a2e;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#random-place-btn:hover {
+  background-color: #00a8cc;
+}
+
+.board-container p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #00d4ff;
+  text-align: center;
+}
