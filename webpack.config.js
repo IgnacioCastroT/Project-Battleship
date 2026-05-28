@@ -21,7 +21,6 @@ module.exports = {
       },
     ],
   },
-  mode: 'development',
   devServer: {
     static: './dist',
     watchFiles: ['src/**/*', 'index.html'],

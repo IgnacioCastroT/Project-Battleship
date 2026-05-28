@@ -23,6 +23,12 @@ const renderBoard = (gameboard, elementId, isEnemy = false) => {
         cell.classList.add('miss');
       } else if (wasHit) {
         cell.classList.add('hit');
+        if (cellContent && cellContent.isSunk()) {
+          cell.classList.add('sunk');
+          if (!cellContent.sunkAnimPlayed) {
+            cell.classList.add('sunk-anim');
+          }
+        }
       } else if (!isEnemy && cellContent) {
         cell.classList.add('ship');
       }
@@ -32,6 +38,13 @@ const renderBoard = (gameboard, elementId, isEnemy = false) => {
       boardElement.appendChild(cell);
     }
   }
+
+  // Marcar barcos hundidos para no repetir su animación en el próximo render
+  gameboard.ships.forEach(ship => {
+    if (ship.isSunk()) {
+      ship.sunkAnimPlayed = true;
+    }
+  });
 };
 
 const showMessage = (msg) => {
