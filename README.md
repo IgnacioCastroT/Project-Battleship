@@ -1,6 +1,6 @@
 # ⚓ Battleship Moderno
 
-¡Bienvenido a **Project-Battleship**! Una reinterpretación moderna y elegante del clásico juego de mesa "Batalla Naval". Este proyecto cuenta con una interfaz de usuario completamente renovada, animaciones inmersivas y un diseño *glassmorphism* táctico.
+¡Bienvenido a **Project-Battleship**! Una reinterpretación moderna y elegante del clásico juego de mesa "Batalla Naval".
 
 ![Battleship Game](https://img.shields.io/badge/Status-Completado-success)
 ![Vanilla JS](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?logo=javascript&logoColor=black)
@@ -10,8 +10,6 @@
 
 ## 🌟 Características Destacadas
 
-- **Diseño Premium**: Interfaz moderna con efectos de cristal (*glassmorphism*), una paleta de colores oscuro/neón y fuentes actualizadas (Google Fonts "Outfit").
-- **Animaciones Reactivas**: Efectos visuales de radar, micro-animaciones al apuntar y efectos explosivos (calaveras animadas) al acertar y hundir barcos.
 - **Diseño Responsivo**: Adaptable a dispositivos móviles y pantallas de escritorio.
 - **Lógica Robusta**: Construido en Vanilla JavaScript puro, separando el estado del juego (basado en testing) de la capa gráfica (UI).
 
@@ -53,7 +51,3 @@ Para generar la versión de producción minificada y optimizada:
 ```bash
 npm run build
 ```
-
-## 🤝 Créditos
-
-Creado por [Ignacio Castro](https://github.com/IgnacioCastroT).
